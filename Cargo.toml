@@ -1,0 +1,21 @@
+[package]
+name = "sune"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/astroorbis/sune"
+homepage = "https://github.com/astroorbis/sune"
+readme = "README.md"
+description = "Solana transaction tool"
+
+[dependencies]
+anyhow = "1.0.86"
+cached = { version = "0.51.3", features = ["async", "disk_store"] }
+clap = { version = "4.5.7", features = ["derive"] }
+futures = "0.3.30"
+itertools = "0.13.0"
+jsonrpsee = { version = "0.23.1", features = ["http-client", "server", "macros"] }
+reqwest = { version = "0.12.4", features = ["json"] }
+serde = { version = "1.0.202", features = ["derive"] }
+serde_json = "1.0.117"
+tokio = "1.37.0"
