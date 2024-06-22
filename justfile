@@ -1,5 +1,5 @@
 run:
-	cargo r -r
+	RUST_LOG=info cargo r -r
 
 sync-mold-path:
 	echo "[target.x86_64-unknown-linux-gnu]" > .cargo/config.toml

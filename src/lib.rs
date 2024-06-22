@@ -1,2 +1,1 @@
-pub fn send_rpc() {}
-pub fn send_jito() {}
+astrolib::mu!(client, spec);
